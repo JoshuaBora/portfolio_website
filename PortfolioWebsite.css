@@ -1,0 +1,424 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  background-image: url(Backgrounds/Page\ Full\ Layout.png);
+  background-size: cover;
+}
+
+img  {
+  width: 100%;
+  height: 100%;
+  image-resolution: 100%;
+}
+
+.uparrow {
+  position: fixed;
+  width: 6%;
+  transform: translateY(-250%);
+  border: 0;
+  background-color: rgba(255, 255, 255, 0);
+
+}
+
+.uparrow :hover {
+  cursor: pointer;
+}
+
+@keyframes SlideInLeft {
+
+  from {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+
+  to{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+}
+
+@keyframes SlideInRight {
+
+    from {
+      transform: translateX(300px);
+      opacity: 0;
+    }
+  
+    to{
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  
+}
+
+@keyframes SlideDown {
+
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+}
+
+
+/* first page */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content:space-between;
+  height: 50px;
+  top: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 10px;
+  z-index: 100;
+
+}
+
+
+
+
+.header button {
+  font-family: Roboto, Arial;
+  font-size: 30px;
+  padding-top: 0px;
+  height: 50px;
+  font-weight: 500;
+  border: 0px;
+  color: white;
+  background-color: black;
+}
+
+/* Animations */
+.home {
+  animation-name: SlideInLeft;
+  animation-duration: 1.5s;
+}
+.contactme {
+  animation-name: SlideInRight;
+  animation-duration: 1.5s;
+}
+.mywork {
+  animation-name: SlideInRight;
+  animation-duration: 1s;
+}
+.about {
+  animation-name: SlideInLeft;
+  animation-duration: 1s;
+}
+.joshua {
+  animation-name: SlideDown;
+  animation-duration: 1s;
+}
+.bora {
+  animation-name: SlideDown;
+  animation-duration: 1.5s;
+}
+
+
+.header button:hover {
+  cursor: pointer;
+  color: rgb(168, 22, 32);
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(255, 177, 15);
+  
+}
+
+.first_page_design {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 620px;
+  margin-top: 1%;
+  margin-bottom: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+  background-image: url(Artwork/Home\ Profil\ Pic.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+
+
+.home_center_img {
+  width: fit-content;
+}
+
+.joshua {
+  position: absolute;
+  font-family: babylonica;
+  color: white;
+  font-size: 140px;
+  left: 0%;
+  padding-top: 10%;
+  padding-left: 15%;
+  
+}
+
+
+.bora {
+  position: absolute;
+  font-family: babylonica;
+  color: white;
+  font-size: 140px;
+  right: 0%;
+  bottom: 0%;
+  padding-right: 19%;
+  
+}
+
+
+/* End of first page */
+/* start of second page */
+
+.second_page {
+  display: flex;
+  background-image: url(Artwork/3D\ Female.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.aboutme_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  margin-top: 5%;
+  margin-left: 45%;
+  margin-bottom: 5%;
+
+  
+}
+
+.aboutme {
+  display: flex;
+  font-family: babylonica;
+  font-size: 80px;
+  width: fit-content;
+  font-weight: 500px;
+  color: white;
+  margin-top: 10%;
+
+}
+
+.info_P_container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.center_dash {
+  display: flex;
+  align-items:flex-start;
+  height: 70%;
+  width: 10px;
+  margin-right: 7%;
+  border-radius: 35px;
+  background-color: white;
+
+}
+
+.info_p {
+  font-family: Roboto, Arial;
+  color: white;
+  font-size: 25px;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+
+.programs {
+  font-family: Babylonica;
+  font-size: 70px;
+  margin:5% 0 0 0;
+}
+
+.programs_icons  {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5%;
+  margin-right: 2%;
+  height: 21%;
+
+}
+
+.programs_icons img {
+  width: 10%;
+  height: 70%;
+  
+}
+
+/* End of second page */
+
+.third_page {
+  height: 746px;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+.mywork {
+  display: flex;
+  color: white;
+  justify-content: center;
+  font-family: babylonica;
+  font-size: 100px;
+  padding-top: 1%;
+  margin-bottom: 1%;
+}
+
+.workslide {
+  display: flex;
+  margin: 0 10%;
+  justify-content: space-around;
+}
+
+.workslide button {
+  font-family: Roboto, Arial;
+  color: white;
+  height: 5%;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+}
+
+.workslide button:hover {
+  cursor: pointer;
+  color: rgb(168, 22, 32);
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(255, 177, 15);
+}
+
+.work_container {
+  display: flex;
+  margin: 2% 10% 0 15%;
+  height: 65%;
+  overflow: hidden;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: 0%;
+  
+}
+
+.pistols .josh_sculpt {
+  width: 70%;
+  
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: 0%;
+}
+
+.section3 {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: 0%;
+}
+
+/* End of third page */
+
+.fourth_page {
+  display: flex;
+  height: 746px;
+  background-image: url(Backgrounds/Page\ 4\ Background.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  /*background-color: aqua;*/
+}
+
+.contact_me_container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+  
+  
+  
+}
+
+.contact {
+  display: flex;
+  font-family: babylonica;
+  color: white;
+  font-size: 150px;
+  margin: 0 ;
+  padding: 0 0 0 15%;
+  white-space: nowrap;
+  overflow: nowrap;
+}
+
+.me {
+  display: flex;
+  justify-content: end;
+  font-family: babylonica;
+  color: white;
+  font-size: 100px;
+  margin: 0 ;
+  padding: 0 16% 0 0 ;
+  
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content:center ;
+  width: 50%;
+  height: 100%;
+  
+  
+  
+  
+  
+  
+  
+}
+
+.social_icons {
+  display:flex ;
+  justify-content: space-around;
+  height: 8%;
+
+
+}
+
+.social_icons img {
+  display: flex;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.socials_dash {
+  display: flex;
+  justify-content:center ;
+  margin: 5% 25% 0;
+  height: 1%;
+  border-radius: 5px;
+  background-color: #a81620;
+}
